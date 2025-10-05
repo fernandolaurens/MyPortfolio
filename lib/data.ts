@@ -2,14 +2,16 @@ import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
 
-import elite from '/light site.png';
-import friday from '/friday.png';
-import terravision from '/terravision.png';
-import skindisease from '/skindisease.png';
-import mystoryapp from '/mystoryapp.png';
-import dashboard2 from '/dashboard.png';
-import gastro from '/gastro.png';
-import livingRoomBedroom from '/livingRoomBedroom.png';
+import elite from '@/public/light site.png';
+import friday from '@/public/friday.png';
+import terravision from '@/public/terravision.png';
+import skindisease from '@/public/skindisease.png';
+import mystoryapp from '@/public/mystoryapp.png';
+import dashboard2 from '@/public/dashboard.png';
+import gastro from '@/public/gastro.png';
+import livingRoomBedroom from '@/public/livingRoomBedroom.png';
+import letterboxd from '@/public/letterboxd.png';
+
 import letterboxd from '/letterboxd.png';
 import React from 'react';
 
