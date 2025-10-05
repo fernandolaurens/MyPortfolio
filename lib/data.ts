@@ -2,15 +2,15 @@ import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
 
-import elite from '@/public/light site.png';
-import friday from "@/public/friday.png";
-import terravision from "@/public/terravicion.png"
-import skindisease from "@/public/skindisease.png"
-import mystoryapp from "@/public/mystoryapp.png"
-import dashboard2 from "@/public/dasboard.png"
-import gastro from "@/public/gastro.png"
-import livingRoomBedroom from "@/public/livingRoomBedroom.png"
-import letterboxd from "@/public/letterboxd.png"
+import elite from '/light site.png';
+import friday from '/friday.png';
+import terravision from '/terravicion.png';
+import skindisease from '/skindisease.png';
+import mystoryapp from '/mystoryapp.png';
+import dashboard2 from '/dasboard.png';
+import gastro from '/gastro.png';
+import livingRoomBedroom from '/livingRoomBedroom.png';
+import letterboxd from '/letterboxd.png';
 import React from 'react';
 
 export const links = [
