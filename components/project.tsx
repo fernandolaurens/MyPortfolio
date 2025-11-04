@@ -25,7 +25,7 @@ export default function Project({
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
-  // 🔧 TAMBAHAN: Layout khusus untuk Big Data Analytics project
+  // Layout khusus untuk Excel & Big Data Analytics
   const isExcelProject =
     title === 'Excel Spreadsheet & OnlyOffice Dashboard' ||
     title === 'Project-Based Virtual Internship – Big Data Analytics Intern';
@@ -50,12 +50,12 @@ export default function Project({
               {title}
             </h3>
 
-            {/* deskripsi multi-line dengan jarak nyaman */}
+            {/* Deskripsi multi-line */}
             <div className="mt-3 text-[0.95rem] leading-relaxed text-gray-700 dark:text-white/80 max-w-2xl space-y-3">
               {description}
             </div>
 
-            {/* tombol link */}
+            {/* Tombol Link */}
             <div className="mt-4 mb-2 flex items-center justify-start flex-wrap gap-3">
               {demoLink && (
                 <a
@@ -94,7 +94,7 @@ export default function Project({
               )}
             </div>
 
-            {/* tags */}
+            {/* Tags */}
             <ul className="flex flex-wrap justify-start mt-2 gap-2">
               {tags.map((tag) => (
                 <li
@@ -106,11 +106,13 @@ export default function Project({
               ))}
             </ul>
 
-            {/* gambar full di bawah */}
+            {/* Gambar penuh di bawah */}
             <div className="mt-5 w-full">
               <Image
                 src={imageUrl}
                 alt={`Screenshot of ${title}`}
+                width={1000}
+                height={600}
                 quality={95}
                 className="w-full h-auto rounded-xl shadow-xl object-contain"
                 priority
@@ -125,7 +127,7 @@ export default function Project({
               {description}
             </p>
 
-            {/* tombol link */}
+            {/* Tombol Link */}
             <div className="mt-3 mb-2 flex items-center flex-row gap-3">
               {demoLink && (
                 <a
@@ -164,7 +166,7 @@ export default function Project({
               )}
             </div>
 
-            {/* tags */}
+            {/* Tags */}
             <ul className="flex flex-wrap mt-2 gap-1 sm:mt-auto">
               {tags.map((tag) => (
                 <li
@@ -176,10 +178,12 @@ export default function Project({
               ))}
             </ul>
 
-            {/* gambar melayang */}
+            {/* Gambar melayang */}
             <Image
               src={imageUrl}
               alt={`Screenshot of ${title}`}
+              width={800}
+              height={500}
               quality={95}
               className="absolute hidden sm:block top-8 -right-40 w-[30.25rem] rounded-t-lg shadow-2xl
                 transition 

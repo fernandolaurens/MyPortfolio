@@ -1,18 +1,6 @@
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-
-import elite from '@/public/light site.png';
-import friday from '@/public/friday.png';
-import terravision from '@/public/terravicion.png';
-import skindisease from '@/public/skindisease.png';
-import mystoryapp from '@/public/mystoryapp.png';
-import dashboard2 from '@/public/dashboard.png';
-import gastro from '@/public/gastro.png';
-import livingRoomBedroom from '@/public/livingRoomBedroom.png';
-import letterboxd from '@/public/letterboxd.png';
-import dashboard3 from '@/public/dashboard3.png';
-
 import React from 'react';
 
 export const links = [
@@ -89,7 +77,7 @@ export const projectsData = [
       'Local Database',
       'Gemini 2.5 Flash',
     ],
-    imageUrl: friday,
+    imageUrl: '/friday.png',
     demoLink:
       'https://drive.google.com/file/d/1R614AH-5wf9vhKF9lTSD4sQR2MY4VCsY/view?usp=drive_link',
     repoLink: 'https://github.com/fernandolaurens/F.R.I..D.A.Y.-V.2.0-',
@@ -100,7 +88,7 @@ export const projectsData = [
     title: 'Excel Spreadsheet & OnlyOffice Dashboard',
     description:
       'Created an interactive dashboard using Excel Spreadsheet and OnlyOffice to organize, analyze, and visualize data effectively for reporting and monitoring purposes.',
-    imageUrl: dashboard2,
+    imageUrl: '/dashboard.png',
     tags: ['Excel Spreadsheet', 'OnlyOffice', 'Data Visualization', 'Reporting'],
     docLink:
       'https://drive.google.com/file/d/1sViitI_xqMwR7zsxSkYHC4EqhjSJcicp/view?usp=drive_link',
@@ -110,7 +98,7 @@ export const projectsData = [
     description:
       'An application that uses artificial intelligence to help beginners in real estate investment by predicting property prices and providing strategic recommendations.',
     tags: ['Python', 'Machine Learning', 'Flask', 'Scikit-learn', 'Pandas'],
-    imageUrl: terravision,
+    imageUrl: '/terravicion.png',
     demoLink:
       'https://www.linkedin.com/posts/rianco-marcellino-andreas_lifeatbangkit-bangkit24h1-pmchallenge-ugcPost-7213926513367269376-Noxf',
     repoLink: 'https://github.com/fernandolaurens/Terravision',
@@ -120,7 +108,7 @@ export const projectsData = [
     description:
       'Designed the user interface and experience for the Gastro Diplomasi RI 2025 initiative, focusing on modern, accessible, and responsive layouts to enhance digital engagement and communication.',
     tags: ['UI/UX Design', 'Figma', 'Prototyping', 'User Research'],
-    imageUrl: gastro,
+    imageUrl: '/gastro.png',
     demoLink:
       'https://www.figma.com/design/YSoTCvuduma4pY9PDLFOdC/Untitled?node-id=0-1&p=f&t=F1sGV6xXMiZ4ESYq-0',
   },
@@ -136,7 +124,7 @@ export const projectsData = [
       'Local Database',
       'Gemini 2.5 Flash',
     ],
-    imageUrl: skindisease,
+    imageUrl: '/skindisease.png',
     demoLink:
       'https://drive.google.com/file/d/1_lxqQHZaP0XChAaKETsDormMoBx4hc7c/view?usp=drive_link',
     repoLink: 'https://github.com/braceskabane23/Dermatech',
@@ -148,7 +136,7 @@ export const projectsData = [
       'Modern Living Room and Bedroom Modeling & Texturing with Blender',
     description:
       'A 3D project showcasing modern living room and bedroom interior design created with Blender, focusing on modeling, texturing, and realistic rendering.',
-    imageUrl: livingRoomBedroom,
+    imageUrl: '/livingRoomBedroom.png',
     tags: ['Blender', '3D', 'Rendering', 'Texturing', 'Modeling'],
     demoLink:
       'https://media.journoportfolio.com/users/362759/uploads/fb96f618-e913-48bd-8ee8-4435a3d767d7.pdf',
@@ -158,7 +146,7 @@ export const projectsData = [
     description:
       'The application that I worked on during Bangkit. Has the main feature of being able to post and view stories and display location.',
     tags: ['Kotlin', 'JSON', 'Cloud API', 'Local Database'],
-    imageUrl: mystoryapp,
+    imageUrl: '/mystoryapp.png',
     demoLink:
       'https://drive.google.com/file/d/1_lxqQHZaP0XChAaKETsDormMoBx4hc7c/view?usp=drive_link',
     repoLink: 'https://github.com/braceskabane23/Dermatech',
@@ -167,7 +155,7 @@ export const projectsData = [
     title: 'Redesigning Letterboxd UI',
     description:
       'A UI/UX redesign project for Letterboxd, focusing on improving user interface clarity, accessibility, and overall user experience through modern design principles.',
-    imageUrl: letterboxd,
+    imageUrl: '/letterboxd.png',
     tags: ['UI/UX Design', 'Figma', 'Prototyping', 'User Research'],
     demoLink:
       'https://www.figma.com/file/u0fMDpPOwQ4M0rtwLWlhOY/IMK5_Laurens-Fernando-Pasaribu?type=design&node-id=0-1&mode=design&t=QgOYyIKZdqN8F2cS-0',
@@ -175,16 +163,13 @@ export const projectsData = [
       'https://laurens-fernandopasaribu.portfolial.com/?item=2478329',
   },
   {
-  title: 'Project-Based Virtual Internship – Big Data Analytics Intern',
-  description: `ChatGPT said:
-
-I conducted a comprehensive business performance analysis covering the period 2020–2023 using a Top-Down Analytical Approach, beginning with a high-level corporate overview and progressing to detailed insights into customer behavior. To support this analysis, I managed and imported four large-scale datasets containing over 600,000 entries into Google BigQuery for advanced analytical processing and generated insight tables using complex SQL queries. Additionally, I designed an interactive analytical dashboard in Power BI and Google Data Studio, structured into three core analytical layers: the Macro Level, which examined overall performance in terms of transactions, sales, and profit; the Meso Level, which evaluated best-selling products, top categories, and their contribution to total sales; and the Micro Level, which assessed customer loyalty and identified top-performing branches based on transaction volume and customer ratings.  `,
-  imageUrl: dashboard3,
-  tags: ['Big Data Analytics', 'SQL', 'BigQuery', 'Power BI', 'Google Data Studio'],
-  docLink: 'https://lookerstudio.google.com/reporting/fed48a53-60ee-43b5-b754-5c894f919952/page/lkCdF',
-},
-
-  
+    title: 'Project-Based Virtual Internship – Big Data Analytics Intern',
+    description: `I conducted a comprehensive business performance analysis covering the period 2020–2023 using a Top-Down Analytical Approach, beginning with a high-level corporate overview and progressing to detailed insights into customer behavior. To support this analysis, I managed and imported four large-scale datasets containing over 600,000 entries into Google BigQuery for advanced analytical processing and generated insight tables using complex SQL queries. Additionally, I designed an interactive analytical dashboard in Power BI and Google Data Studio, structured into three core analytical layers: the Macro Level, which examined overall performance in terms of transactions, sales, and profit; the Meso Level, which evaluated best-selling products, top categories, and their contribution to total sales; and the Micro Level, which assessed customer loyalty and identified top-performing branches based on transaction volume and customer ratings.`,
+    imageUrl: '/dashboard3.png',
+    tags: ['Big Data Analytics', 'SQL', 'BigQuery', 'Power BI', 'Google Data Studio'],
+    docLink:
+      'https://lookerstudio.google.com/reporting/fed48a53-60ee-43b5-b754-5c894f919952/page/lkCdF',
+  },
 ] as const;
 
 export const skillsData = [
@@ -210,9 +195,9 @@ export const skillsData = [
   'PostgreSQL',
   'Excel',
   'Jupyter Notebook',
-  'Big Data Analytics', 
-  'SQL', 
-  'BigQuery', 
+  'Big Data Analytics',
+  'SQL',
+  'BigQuery',
   'Power BI',
-   'Google Data Studio'
+  'Google Data Studio',
 ] as const;
