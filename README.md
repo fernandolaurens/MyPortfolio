@@ -45,7 +45,7 @@ Ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Turdugul/portfolio-next2.git
+    git clone https://github.com/fernandolaurens/portfolio-website.git
    ```
 
 2. Navigate to the project directory:
@@ -105,9 +105,9 @@ yarn start
 
 Feel free to reach out if you have any questions or feedback!
 
-- **Email**: [t.okonbaeva92@gmail.com.com](mailto:t.okonbaeva92@gmail.com)
-- **LinkedIn**: [My-linkedin](https://www.linkedin.com/in/turdugul/)
-- **GitHub**: [My-github](https://github.com/Turdugul)
+- **Email**: [pasaribulaurens@gmail.com](mailto:pasaribulaurens@gmail.com)
+- **LinkedIn**: [My-linkedin](https://www.linkedin.com/in/laurensfernando/)
+- **GitHub**: [My-github](https://github.com/fernandolaurens/)
 
 ---
 
