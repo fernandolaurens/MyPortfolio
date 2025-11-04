@@ -9,7 +9,7 @@ import { BsArrowRight } from 'react-icons/bs';
 type ProjectProps = {
   title: string;
   description: string;
-  tags: string[];
+  tags: readonly string[]; // ✅ fix readonly type
   imageUrl: string;
   demoLink?: string;
   repoLink?: string;
@@ -24,7 +24,7 @@ export default function Project({
   demoLink,
   repoLink,
   docLink,
-}: ProjectProps & { docLink?: string }) {
+}: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -33,7 +33,6 @@ export default function Project({
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
-  // Layout khusus untuk Excel & Big Data Analytics
   const isExcelProject =
     title === 'Excel Spreadsheet & OnlyOffice Dashboard' ||
     title === 'Project-Based Virtual Internship – Big Data Analytics Intern';
@@ -51,19 +50,16 @@ export default function Project({
           ${isExcelProject ? 'overflow-visible' : 'overflow-hidden'}
         `}
       >
-        {/* ===== LAYOUT KHUSUS UNTUK EXCEL & BIG DATA PROJECT ===== */}
         {isExcelProject ? (
           <div className="pt-6 pb-7 px-5 sm:px-10 flex flex-col items-start text-left">
             <h3 className="text-2xl font-semibold text-left w-full">
               {title}
             </h3>
 
-            {/* Deskripsi multi-line */}
             <div className="mt-3 text-[0.95rem] leading-relaxed text-gray-700 dark:text-white/80 max-w-2xl space-y-3">
               {description}
             </div>
 
-            {/* Tombol Link */}
             <div className="mt-4 mb-2 flex items-center justify-start flex-wrap gap-3">
               {demoLink && (
                 <a
@@ -102,7 +98,6 @@ export default function Project({
               )}
             </div>
 
-            {/* Tags */}
             <ul className="flex flex-wrap justify-start mt-2 gap-2">
               {tags.map((tag) => (
                 <li
@@ -114,7 +109,6 @@ export default function Project({
               ))}
             </ul>
 
-            {/* Gambar penuh di bawah */}
             <div className="mt-5 w-full">
               <Image
                 src={imageUrl}
@@ -128,14 +122,12 @@ export default function Project({
             </div>
           </div>
         ) : (
-          /* ===== DEFAULT UNTUK PROJECT LAIN ===== */
           <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
             <h3 className="text-xl font-semibold">{title}</h3>
             <p className="mt-2 leading-relaxed text-sm text-gray-700 dark:text-white/70">
               {description}
             </p>
 
-            {/* Tombol Link */}
             <div className="mt-3 mb-2 flex items-center flex-row gap-3">
               {demoLink && (
                 <a
@@ -174,7 +166,6 @@ export default function Project({
               )}
             </div>
 
-            {/* Tags */}
             <ul className="flex flex-wrap mt-2 gap-1 sm:mt-auto">
               {tags.map((tag) => (
                 <li
@@ -186,7 +177,6 @@ export default function Project({
               ))}
             </ul>
 
-            {/* Gambar melayang */}
             <Image
               src={imageUrl}
               alt={`Screenshot of ${title}`}
