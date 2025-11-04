@@ -25,7 +25,10 @@ export default function Project({
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
-  const isExcelProject = title === 'Excel Spreadsheet & OnlyOffice Dashboard';
+  // 🔧 TAMBAHAN: Layout khusus untuk Big Data Analytics project
+  const isExcelProject =
+    title === 'Excel Spreadsheet & OnlyOffice Dashboard' ||
+    title === 'Project-Based Virtual Internship – Big Data Analytics Intern';
 
   return (
     <motion.div
@@ -40,16 +43,20 @@ export default function Project({
           ${isExcelProject ? 'overflow-visible' : 'overflow-hidden'}
         `}
       >
-        {/* ===== VARIAN KHUSUS EXCEL ===== */}
+        {/* ===== LAYOUT KHUSUS UNTUK EXCEL & BIG DATA PROJECT ===== */}
         {isExcelProject ? (
-          <div className="pt-6 pb-7 px-5 sm:px-10 flex flex-col items-center text-center">
-            <h3 className="text-2xl font-semibold">{title}</h3>
-            <p className="mt-2 leading-relaxed text-[0.95rem] text-gray-700 dark:text-white/70 max-w-2xl">
+          <div className="pt-6 pb-7 px-5 sm:px-10 flex flex-col items-start text-left">
+            <h3 className="text-2xl font-semibold text-left w-full">
+              {title}
+            </h3>
+
+            {/* deskripsi multi-line dengan jarak nyaman */}
+            <div className="mt-3 text-[0.95rem] leading-relaxed text-gray-700 dark:text-white/80 max-w-2xl space-y-3">
               {description}
-            </p>
+            </div>
 
             {/* tombol link */}
-            <div className="mt-3 mb-2 flex items-center justify-center flex-wrap gap-3">
+            <div className="mt-4 mb-2 flex items-center justify-start flex-wrap gap-3">
               {demoLink && (
                 <a
                   href={demoLink}
@@ -88,7 +95,7 @@ export default function Project({
             </div>
 
             {/* tags */}
-            <ul className="flex flex-wrap justify-center mt-2 gap-2">
+            <ul className="flex flex-wrap justify-start mt-2 gap-2">
               {tags.map((tag) => (
                 <li
                   key={tag}
@@ -99,7 +106,7 @@ export default function Project({
               ))}
             </ul>
 
-            {/* gambar full */}
+            {/* gambar full di bawah */}
             <div className="mt-5 w-full">
               <Image
                 src={imageUrl}

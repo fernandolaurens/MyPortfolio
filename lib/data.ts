@@ -4,15 +4,15 @@ import { LuGraduationCap } from 'react-icons/lu';
 
 import elite from '@/public/light site.png';
 import friday from '@/public/friday.png';
-import terravision from '@/public/terravision.png';
+import terravision from '@/public/terravicion.png';
 import skindisease from '@/public/skindisease.png';
 import mystoryapp from '@/public/mystoryapp.png';
 import dashboard2 from '@/public/dashboard.png';
 import gastro from '@/public/gastro.png';
 import livingRoomBedroom from '@/public/livingRoomBedroom.png';
 import letterboxd from '@/public/letterboxd.png';
+import dashboard3 from '@/public/dashboard3.png';
 
-import letterboxd from '/letterboxd.png';
 import React from 'react';
 
 export const links = [
@@ -65,6 +65,14 @@ export const experiencesData = [
       'Provided IT technical support for Zoom video conferences. Repaired internet networks (Cisco, Fortinet), configured FortiClient VPN, and implemented Kaspersky Endpoint Security. Assisted users with Microsoft Exchange email, contributed to UI/UX development of Gastrodiplomacy 2025 RI, and designed interactive dashboards to monitor IT and operational data.',
     icon: React.createElement(CgWorkAlt),
     date: 'Jan – Mar 2025',
+  },
+  {
+    title: 'Big Data Analytics Intern',
+    location: 'Kimia Farma',
+    description:
+      'Conducted a comprehensive business performance analysis (2020–2023) using a Top-Down Analytical Approach, from a macro-level corporate overview to micro-level customer behavior insights. Managed and integrated four large datasets (+600K records) into Google BigQuery for analytical processing, generated insight tables with complex SQL queries, and designed interactive dashboards in Power BI and Google Data Studio to evaluate performance, sales, and customer loyalty.',
+    icon: React.createElement(CgWorkAlt),
+    date: 'Oct – Nov 2025',
   },
 ] as const;
 
@@ -166,6 +174,17 @@ export const projectsData = [
     docLink:
       'https://laurens-fernandopasaribu.portfolial.com/?item=2478329',
   },
+  {
+  title: 'Project-Based Virtual Internship – Big Data Analytics Intern',
+  description: `ChatGPT said:
+
+I conducted a comprehensive business performance analysis covering the period 2020–2023 using a Top-Down Analytical Approach, beginning with a high-level corporate overview and progressing to detailed insights into customer behavior. To support this analysis, I managed and imported four large-scale datasets containing over 600,000 entries into Google BigQuery for advanced analytical processing and generated insight tables using complex SQL queries. Additionally, I designed an interactive analytical dashboard in Power BI and Google Data Studio, structured into three core analytical layers: the Macro Level, which examined overall performance in terms of transactions, sales, and profit; the Meso Level, which evaluated best-selling products, top categories, and their contribution to total sales; and the Micro Level, which assessed customer loyalty and identified top-performing branches based on transaction volume and customer ratings.  `,
+  imageUrl: dashboard3,
+  tags: ['Big Data Analytics', 'SQL', 'BigQuery', 'Power BI', 'Google Data Studio'],
+  docLink: 'https://lookerstudio.google.com/reporting/fed48a53-60ee-43b5-b754-5c894f919952/page/lkCdF',
+},
+
+  
 ] as const;
 
 export const skillsData = [
@@ -191,4 +210,9 @@ export const skillsData = [
   'PostgreSQL',
   'Excel',
   'Jupyter Notebook',
+  'Big Data Analytics', 
+  'SQL', 
+  'BigQuery', 
+  'Power BI',
+   'Google Data Studio'
 ] as const;
